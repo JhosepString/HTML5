@@ -1,4 +1,8 @@
-:root{
+@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
+@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
+
+:root {
     /*COLORES*/
     --color-body:#BCB4B4;
     --color-header:#3a38ca;
@@ -18,97 +22,124 @@
     --tamaño-xxl: 48px;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{    
-    margin: 0px;
+body {    
+    margin: 0;
     font-family: var(--font-family);
+    min-height: 450px;
+    height: 100vh;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 }
 
-header{
+/* ================== HEADER ================== */
+header {
     background-color: var(--color-header);
     padding-top: var(--tamaño-l);
     padding-bottom: var(--tamaño-xs);
-}
-
-footer{
-    background-color: var(--color-footer);
-}
-
-h1, h2, h3, h4, h5, h6{
-    margin: 0px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-h1{
-    color: var(--color-text3);
     text-align: center;
-    font-size: 65px;
 }
 
-.container{
-    width: 920px;
-    overflow: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 15px;
-    padding-left: 18px;
-    padding-right: 18px;
-    background-color: var(--color-text3);
-    border-radius: 10px;
-    box-shadow: 3px 3px 1.5px rgb(0, 0, 0, 0.1);
+/* ======= TÍTULO 3D ======= */
+.title-3d {
+    font-family: 'Pacifico', 'Roboto', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    position: relative;
+
+    /* efecto 3D con sombras */
+    text-shadow: 
+        1px 1px 0 #0077ea,
+        2px 2px 0 #0066c2,
+        3px 3px 0 #004f96,
+        4px 4px 0 #00366b,
+        5px 5px 5px rgba(0,0,0,0.4);
+
+    /* animación */
+    animation: sway 4s infinite alternate ease-in-out;
 }
 
-.padded{
-    padding-top: 10px;
-    padding-bottom: 10px;
+@keyframes sway {
+  0%   { transform: rotateY(20deg) rotateX(15deg); }
+  100% { transform: rotateY(-20deg) rotateX(-15deg); }
 }
 
-.main-content{
-    background-color: rgb(245, 245, 245);
-}
-
-.nav-links{
+/* ================== NAV ================== */
+.nav-links {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: var(--tamaño-xxl);
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-.nav-links li{
+.nav-links li {
     padding-left: var(--tamaño-xxl);
     font-size: 20px;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     padding: 9px;
     color: var(--color-text3);
+    transition: 0.3s;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: var(--color-text);
     background-color: var(--color-text2);
     border-radius: 5px;
 }
 
-#sobremi{
+/* ================== MAIN ================== */
+.container {
+    width: 920px;
+    overflow: auto;
+    margin: 20px auto;
+    padding: 25px 18px 15px 18px;
+    background-color: var(--color-text3);
+    border-radius: 10px;
+    box-shadow: 3px 3px 1.5px rgb(0, 0, 0, 0.1);
+}
+
+.padded {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-content {
+    background-color: rgb(245, 245, 245);
+}
+
+#sobremi {
     padding-top: 28px;
 }
 
-#Otros{
+#Otros {
     padding-bottom: 28px;
 }
 
-#footer-text{
+/* ================== FOOTER ================== */
+footer {
+    background-color: var(--color-footer);
+}
+
+#footer-text {
     text-align: center;
     color: var(--color-text2);
-    padding: var(--tamaño-l) 0px;
+    padding: var(--tamaño-l) 0px;
+}
+
+/* ================== TITULOS GENERALES ================== */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
