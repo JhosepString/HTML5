@@ -1,72 +1,74 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Página sencilla — Ejemplo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 <body>
-<div class="container">
-<header>
-<div class="brand">
-<div class="logo">PG</div>
-<div>
-<div style="font-weight:700">Mi Página</div>
-<div class="small muted">Una plantilla simple</div>
-</div>
-</div>
-<nav>
-<a href="#">Inicio</a>
-<a href="#features">Servicios</a>
-<a href="#gallery">Galería</a>
-<a class="cta" href="#contact">Contáctanos</a>
-</nav>
-</header>
+    <header id="header">
+        <h1>Jose Antonio Hernandez</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">Enlace 1</a></li>
+                <li><a href="">Enlace 2</a></li>
+                <li><a href="">Enlace 3</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <div class="main-content">
+        <section id="sobremi" class="padded">
+            <div class="container">
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut nemo architecto quos quis sequi eaque at excepturi quod.</p>
+                <p>Ut placeat omnis minus, aspernatur repellendus nulla voluptates voluptate. Placeat laudantium excepturi molestias similique tenetur, temporibus dolores hic cumque.</p>
+            </div>
+        </section>
 
-<section class="hero">
-<div class="card">
-<h1>Diseño limpio y sencillo<br><span class="muted" style="font-weight:400">HTML + CSS — listo para personalizar</span></h1>
-<p class="muted">Esta plantilla es un punto de partida: estructura clara, tipografía agradable y estilos responsivos. Copia y pega, o modifica las secciones que necesites.</p>
+        <section id="Proyectos" class="padded">
+            <div class="container">
+                <article>
+                        <h2>Proyectos</h2>
+                        <p>Lorem, ipsum.</p>
+                        <p>Possimus, totam.</p>
+                </article>
+                <article>
+                        <p>Lorem, ipsum.</p>
+                        <p>Nam, in!</p>
+                </article>
+                <article>
+                    <p>Lorem, ipsum.</p>
+                    <p>Eum, exercitationem.</p>
+                </article>
+            </div>
+        </section>
+        <section id="Otros" class="padded">
+            <div class="container">
+                <article>
+                    <p>Lorem, ipsum.</p>
+                    <p>Quaerat, quod!</p>
+                </article>
+                <article>
+                    <p>Lorem, ipsum.</p>
+                    <p>Sapiente, temporibus?</p>
+                </article>
+                <article>
+                    <p>Lorem, ipsum.</p>
+                    <p>Nam, culpa!</p>
+                </article>
+            </div>
+        </section>
+    </div>
 
+    <footer>
+        <div>
+            <h2 id="footer-text">Contactos@2025</h2>
+        </div>
+    </footer>
 
-<div class="stats">
-<div class="stat">
-<div class="small muted">Visitas</div>
-<b>1.2k</b>
-</div>
-<div class="stat">
-<div class="small muted">Proyectos</div>
-<b>8</b>
-</div>
-<div class="stat">
-<div class="small muted">Clientes</div>
-<b>4</b>
-</div>
-</div>
-</div>
-
-
-<aside class="card center">
-<div>
-<h3 style="margin:0 0 8px">Suscríbete</h3>
-<p class="muted" style="margin:0 0 12px">Recibe novedades por correo</p>
-<form onsubmit="event.preventDefault();alert('¡Gracias!')">
-<input type="email" placeholder="tucorreo@ejemplo.com" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:8px" />
-<button style="width:100%;padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:600">Suscribir</button>
-</form>
-</div>
-</aside>
-</section>
-
-
-<section id="features" class="features">
-<div class="feature card">
-<h3>Fácil de editar</h3>
-<p>HTML claro, comentarios mínimos y CSS con variables para cambiar colores y radios rápido.</p>
-</div>
-<div class="feature card">
+</body>
 </html>

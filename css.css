@@ -1,0 +1,114 @@
+:root{
+    /*COLORES*/
+    --color-body:#BCB4B4;
+    --color-header:#3a38ca;
+    --color-footer:#41404D;
+    --color-text:#0F0F0F;
+    --color-text3:#FFFFFF;
+    --color-text2:#afacac;
+    --font-family: 'Roboto', sans-serif;
+
+    /*REGLA DEL 8pt*/
+    --tamaño-xxs: 4px;
+    --tamaño-xs: 8px;
+    --tamaño-s: 16px;
+    --tamaño-m: 24px;
+    --tamaño-l: 32px;
+    --tamaño-xl: 40px;
+    --tamaño-xxl: 48px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{    
+    margin: 0px;
+    font-family: var(--font-family);
+}
+
+header{
+    background-color: var(--color-header);
+    padding-top: var(--tamaño-l);
+    padding-bottom: var(--tamaño-xs);
+}
+
+footer{
+    background-color: var(--color-footer);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1{
+    color: var(--color-text3);
+    text-align: center;
+    font-size: 65px;
+}
+
+.container{
+    width: 920px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: var(--color-text3);
+    border-radius: 10px;
+    box-shadow: 3px 3px 1.5px rgb(0, 0, 0, 0.1);
+}
+
+.padded{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-content{
+    background-color: rgb(245, 245, 245);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: var(--tamaño-xxl);
+    margin-bottom: 0px;
+}
+
+.nav-links li{
+    padding-left: var(--tamaño-xxl);
+    font-size: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    padding: 9px;
+    color: var(--color-text3);
+}
+
+.nav-links li a:hover{
+    color: var(--color-text);
+    background-color: var(--color-text2);
+    border-radius: 5px;
+}
+
+#sobremi{
+    padding-top: 28px;
+}
+
+#Otros{
+    padding-bottom: 28px;
+}
+
+#footer-text{
+    text-align: center;
+    color: var(--color-text2);
+    padding: var(--tamaño-l) 0px;
+}
