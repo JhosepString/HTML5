@@ -1,107 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>José Hernandez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
 </head>
+
 <body>
+
     <header id="header">
-        <h1 class="title-3d">José Hernandez Hernandez</h1>
-
-        <div class="stage">
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-  <div class="layer"></div>
-</div>
-
-<style>
-  * *, *::before, *::after { 
-    animation-play-state: running !important;
-  }
-</style>
-<script>window.setTimeout = null;</script>
+    <div class="titulo-animado">
+         <p><span>Jose Antonio Hernandez</span></p>
+    </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Maqueta</a></li>
+      <li><a href="html.html">Estilo 1</a></li>
+      <li><a href="html2.html">Estilo 2</a></li>
+    </ul>
+  </nav>
+</header>
 
 
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="css.html">Maqueta</a></li>
-                <li><a href="html.html">Estilo 1</a></li>
-                <li><a href="html2.html">Estilo 2</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="main-content">
+    <main class="main-content">
         <section id="sobremi" class="padded">
-            <div class="container">
-                <h2>Sobre mi</h2>
+            <div class="container fade-in">
+                <h2>Sobre mí</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut nemo architecto quos quis sequi eaque at excepturi quod.</p>
                 <p>Ut placeat omnis minus, aspernatur repellendus nulla voluptates voluptate. Placeat laudantium excepturi molestias similique tenetur, temporibus dolores hic cumque.</p>
             </div>
         </section>
 
-        <section id="Proyectos" class="padded">
-            <div class="container">
-                <article>
-                        <h2>Proyectos</h2>
+        <section id="proyectos" class="padded">
+            <div class="container fade-in">
+                <h2>Proyectos</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Proyecto 1</h3>
                         <p>Lorem, ipsum.</p>
-                        <p>Possimus, totam.</p>
-                </article>
-                <article>
-                        <p>Lorem, ipsum.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Proyecto 2</h3>
                         <p>Nam, in!</p>
-                </article>
-                <article>
-                    <p>Lorem, ipsum.</p>
-                    <p>Eum, exercitationem.</p>
-                </article>
+                    </article>
+                    <article class="card">
+                        <h3>Proyecto 3</h3>
+                        <p>Eum, exercitationem.</p>
+                    </article>
+                </div>
             </div>
         </section>
-        <section id="Otros" class="padded">
-            <div class="container">
-                <article>
-                    <p>Lorem, ipsum.</p>
-                    <p>Quaerat, quod!</p>
-                </article>
-                <article>
-                    <p>Lorem, ipsum.</p>
-                    <p>Sapiente, temporibus?</p>
-                </article>
-                <article>
-                    <p>Lorem, ipsum.</p>
-                    <p>Nam, culpa!</p>
-                </article>
-            </div>
-        </section>
-    </div>
 
+        <section id="otros" class="padded">
+            <div class="container fade-in">
+                <h2>Otros</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Extra 1</h3>
+                        <p>Quaerat, quod!</p>
+                    </article>
+                    <article class="card">
+                        <h3>Extra 2</h3>
+                        <p>Sapiente, temporibus?</p>
+                    </article>
+                    <article class="card">
+                        <h3>Extra 3</h3>
+                        <p>Nam, culpa!</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <h2 id="footer-text">Contactos@2025</h2>
-        </div>
+        <p id="footer-text">© 2025 - Contacto: jose.hernandez@example.com</p>
     </footer>
-
 </body>
 </html>
